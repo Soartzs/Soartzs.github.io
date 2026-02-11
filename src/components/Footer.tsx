@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="border-t border-border/50 py-8">
       <div className="container flex flex-col items-center justify-between gap-4 px-6 sm:flex-row">
         <p className="font-mono text-sm text-muted-foreground">
-          © 2026 <span className="text-primary">Createdby</span>Johnny
+          © 2026 Johnny<span className="text-primary">Johnny</span>
         </p>
         <div className="flex gap-6">
           {[
