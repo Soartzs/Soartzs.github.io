@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a href="#home" className="font-mono text-xl font-bold tracking-tight text-primary neon-text">
-          PIXEL<span className="text-foreground">.studio</span>
+          Createdby<span className="text-foreground">Johnny</span>
         </a>
 
         {/* Desktop */}
