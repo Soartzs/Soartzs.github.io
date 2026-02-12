@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#/" },
+  { label: "About", href: "/#/about" },
+  { label: "Services", href: "/#/services" },
+  { label: "Work", href: "/#/work" },
+  { label: "Contact", href: "/#/contact" },
 ];
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" className="font-mono text-xl font-bold tracking-tight text-primary neon-text">
+        <a href="/#/" className="font-mono text-xl font-bold tracking-tight text-primary neon-text">
           Createdby<span className="text-foreground">Johnny</span>
         </a>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="#contact"
+          href="/#/contact"
           className="hidden rounded-none border border-primary bg-transparent px-6 py-2 font-mono text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:neon-glow md:inline-block"
         >
           Let's Talk
