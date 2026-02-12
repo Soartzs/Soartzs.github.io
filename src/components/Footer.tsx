@@ -23,12 +23,18 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="border-t border-border/50 pt-6 flex justify-center">
+        <div className="border-t border-border/50 pt-6 flex justify-center gap-8">
           <a
             href="/impressum"
             className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
           >
             Impressum
+          </a>
+          <a
+            href="/datenschutz"
+            className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
+          >
+            Datenschutz
           </a>
         </div>
       </div>
