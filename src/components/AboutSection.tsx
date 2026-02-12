@@ -3,8 +3,8 @@ import selfPortrait from "@/assets/self-portrait.jpeg";
 
 const stats = [
   { value: "8+", label: "Years Experience" },
-  { value: "15+", label: "Projects Completed" },
-  { value: "10+", label: "Happy Clients" },
+  { value: "53+", label: "Projects Completed" },
+  { value: "20+", label: "Happy Clients" },
 ];
 
 const AboutSection = () => {
