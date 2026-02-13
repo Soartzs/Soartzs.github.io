@@ -13,7 +13,9 @@ const navItems = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (sectionId: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const sectionId = href.substring(1); // Remove the #
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -29,7 +31,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#home" onClick={() => scrollToSection("home")} className="font-mono text-xl font-bold tracking-tight text-primary neon-text">
+        <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="font-mono text-xl font-bold tracking-tight text-primary neon-text">
           Createdby<span className="text-foreground">Johnny</span>
         </a>
 
@@ -39,10 +41,7 @@ const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.href.substring(1));
-                }}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary cursor-pointer"
               >
                 {item.label}
@@ -53,10 +52,7 @@ const Navbar = () => {
 
         <a
           href="#contact"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("contact");
-          }}
+          onClick={(e) => handleNavClick(e, "#contact")}
           className="hidden rounded-none border border-primary bg-transparent px-6 py-2 font-mono text-sm uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:neon-glow md:inline-block cursor-pointer"
         >
           Let's Talk
@@ -72,17 +68,14 @@ const Navbar = () => {
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
-          animate={{ opacitye) => {
-                    e.preventDefault();
-                    scrollToSection(item.href.substring(1));
-                  }}
-                  className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary cursor-pointer
+          animate={{ opacity: 1, height: "auto" }}
+          className="border-t border-border/50 bg-background md:hidden"
         >
           <ul className="flex flex-col gap-4 px-6 py-6">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <ae) => handleNavClick(e, item.href)}
+                  className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary cursor-pointer
                   onClick={() => setIsOpen(false)}
                   className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
                 >
