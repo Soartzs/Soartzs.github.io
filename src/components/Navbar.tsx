@@ -74,10 +74,10 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4 px-6 py-6">
             {navItems.map((item) => (
               <li key={item.label}>
-                <ae) => handleNavClick(e, item.href)}
-                  className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary cursor-pointer
-                  onClick={() => setIsOpen(false)}
-                  className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
+                <a
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="font-mono text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary cursor-pointer"
                 >
                   {item.label}
                 </a>
