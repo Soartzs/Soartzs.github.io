@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const clients = [
-  "EXAMPLE1", "EXAMPLE2", "EXAMPLE3", "EXAMPLE4", "EXAMPLE5", "EXAMPLE6", "EXAMPLE7", "EXAMPLE8",
-  "EXAMPLE1", "EXAMPLE2", "EXAMPLE3", "EXAMPLE4", "EXAMPLE5", "EXAMPLE6", "EXAMPLE7", "EXAMPLE8",
+  "DIONYSOS", "WLW", "ENTRACT", "1337", "FUTURAVISIO", 
+  "DIONYSOS", "WLW", "ENTRACT", "1337", "FUTURAVISIO",
 ];
 
 const LogoSlider = () => {
