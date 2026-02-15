@@ -1,8 +1,18 @@
-import { motion } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import React, { MouseEvent } from "react";
+import heroBg from "@/assets/hero-bg.jpg"; // Keeping the import but we might need to adjust if we use it differently or keep it.
 
 const HeroSection = () => {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
+    const { left, top } = currentTarget.getBoundingClientRect();
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  }
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -11,12 +21,30 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden group"
+      onMouseMove={handleMouseMove}
+    >
       {/* Background image */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="h-full w-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
+
+      {/* Mouse Spotlight Effect */}
+      <motion.div
+        className="pointer-events-none absolute -inset-px opacity-0 transition duration-300 group-hover:opacity-100"
+        style={{
+          background: useMotionTemplate`
+            radial-gradient(
+              650px circle at ${mouseX}px ${mouseY}px,
+              rgba(var(--primary-rgb), 0.15),
+              transparent 80%
+            )
+          `,
+        }}
+      />
 
       <div className="container relative z-10 px-6">
         <motion.div
