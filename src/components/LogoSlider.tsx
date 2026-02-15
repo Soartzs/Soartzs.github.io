@@ -22,7 +22,7 @@ const LogoSlider = () => {
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="flex w-max gap-16 items-center flex-nowrap"
+          className="flex w-max gap-16 items-center"
         >
           {clients.map((name, i) => (
             <span
