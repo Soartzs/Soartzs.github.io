@@ -181,12 +181,12 @@
     position: fixed;
     pointer-events: none;
     z-index: 9999;
-    transition: transform 0.15s ease-out, width 0.3s, height 0.3s, background 0.3s;
     mix-blend-mode: screen;
     box-shadow: 0 0 15px hsl(120 100% 55% / 0.5);
     left: 0;
     top: 0;
   }
+
 
   /* Only show cursor on devices with a mouse/pointer */
   @media (pointer: fine) {
