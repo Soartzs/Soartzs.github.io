@@ -136,10 +136,9 @@
   }
 
   .glitch-text span {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
   }
+
 
   @keyframes glitch {
     0% {
