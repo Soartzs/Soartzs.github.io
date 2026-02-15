@@ -1,8 +1,16 @@
 
 import React from 'react';
-import { Target, Activity, ShieldCheck } from 'lucide-react';
+import { Target, Activity, ShieldCheck, ArrowDown } from 'lucide-react';
+import { motion } from "framer-motion";
 
 const HeroDesignTest: React.FC = () => {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-background">
             {/* 3D Grid Background */}
@@ -33,24 +41,32 @@ const HeroDesignTest: React.FC = () => {
                     SYSTEM ONLINE // v4.0.2
                 </div>
 
-                <h1 className="text-4xl sm:text-6xl md:text-9xl font-orbitron font-black leading-tight md:leading-none mb-8 tracking-tighter uppercase glitch-text break-words">
-                    FUTURE <br />
-                    <span className="text-primary neon-text">VISUALS</span>
+                <h1 className="text-4xl sm:text-6xl md:text-8xl font-orbitron font-black leading-tight md:leading-none mb-8 tracking-tighter uppercase glitch-text break-words">
+                    Crafting <br />
+                    <span className="text-primary neon-text">digital</span>
+                    <br />
+                    experiences that
+                    <br />
+                    <span className="text-primary neon-text">glow.</span>
                 </h1>
 
                 <p className="max-w-xl mx-auto text-gray-400 text-sm md:text-lg font-light mb-12 leading-relaxed font-mono px-4">
-                    [LOG] Architecting high-fidelity digital dimensions.
-                    <br className="hidden md:block" />
-                    Merging raw aesthetics with systematic precision.
+                    I design bold identities and build immersive websites that leave a lasting impression. Let's make something unforgettable.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 w-full max-w-md mx-auto sm:max-w-none">
-                    <button className="group relative w-full sm:w-auto overflow-hidden px-10 py-4 md:px-12 md:py-5 bg-primary text-primary-foreground font-orbitron font-bold text-xs md:text-sm tracking-widest hover:scale-105 transition-all duration-300">
-                        <span className="relative z-10">INITIATE_WORK</span>
+                    <button
+                        onClick={() => scrollToSection("work")}
+                        className="group relative w-full sm:w-auto overflow-hidden px-10 py-4 md:px-12 md:py-5 bg-primary text-primary-foreground font-orbitron font-bold text-xs md:text-sm tracking-widest hover:scale-105 transition-all duration-300 cursor-pointer"
+                    >
+                        <span className="relative z-10 uppercase">View Work</span>
                         <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
                     </button>
-                    <button className="w-full sm:w-auto px-10 py-4 md:px-12 md:py-5 border-2 border-primary text-primary font-orbitron font-bold text-xs md:text-sm tracking-widest hover:bg-primary/10 transition-all duration-300 neon-border">
-                        PROTOCOL_01
+                    <button
+                        onClick={() => scrollToSection("about")}
+                        className="w-full sm:w-auto px-10 py-4 md:px-12 md:py-5 border-2 border-primary text-primary font-orbitron font-bold text-xs md:text-sm tracking-widest hover:bg-primary/10 transition-all duration-300 neon-border cursor-pointer uppercase"
+                    >
+                        About Me
                     </button>
                 </div>
             </div>
