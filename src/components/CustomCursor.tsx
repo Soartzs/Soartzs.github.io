@@ -28,13 +28,14 @@ const CustomCursor = () => {
 
         const handleMouseOver = (e: MouseEvent) => {
             const target = e.target as HTMLElement;
-            const isPointer =
+            const isPointer = !!(
                 target.tagName === 'A' ||
                 target.tagName === 'BUTTON' ||
                 target.closest('button') ||
                 target.closest('a') ||
                 target.classList.contains('cursor-pointer') ||
-                window.getComputedStyle(target).cursor === 'pointer';
+                window.getComputedStyle(target).cursor === 'pointer'
+            );
 
             setIsHovering(isPointer);
         };
@@ -69,7 +70,7 @@ const CustomCursor = () => {
                 translateX: "-50%",
                 translateY: "-50%",
                 opacity: isVisible ? 1 : 0,
-                scale: isHovering ? 2.5 : 1,
+                scale: 1,
                 // We handle transitions via framer-motion now for x, y, and scale
                 // So we should remove the CSS transition for these in index.css if needed
             }}
