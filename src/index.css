@@ -112,7 +112,7 @@
       linear-gradient(to bottom, hsl(var(--primary) / 0.2) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: linear-gradient(to bottom, transparent, black 40%, black 60%, transparent);
-    animation: grid-move 20s linear infinite;
+    animation: grid-move 2s linear infinite;
   }
 
   @keyframes grid-move {
@@ -124,6 +124,8 @@
       transform: rotateX(60deg) translateY(60px);
     }
   }
+
+
 
   /* Glitch Text Effect */
   .glitch-text {

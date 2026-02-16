@@ -11,17 +11,17 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Atmospheric Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square bg-[#FF0000]/10 rounded-full blur-[100px] md:blur-[150px] animate-pulse" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square bg-primary/10 rounded-full blur-[100px] md:blur-[150px] animate-pulse" />
 
       {/* Decorative HUD Elements - Hidden on small mobile */}
-      <div className="absolute top-32 left-6 md:left-10 hidden sm:block font-mono text-[8px] md:text-[10px] text-[#FF0000]/60 space-y-2">
-        <div className="flex items-center gap-2"><Target size={12}/> COORD_X: 40.7128</div>
-        <div className="flex items-center gap-2"><Activity size={12}/> SYNC_STATUS: ACTIVE</div>
-        <div className="flex items-center gap-2"><ShieldCheck size={12}/> ENCRYPTION: AES-256</div>
+      <div className="absolute top-32 left-6 md:left-10 hidden sm:block font-mono text-[8px] md:text-[10px] text-primary/60 space-y-2">
+        <div className="flex items-center gap-2"><Target size={12} /> COORD_X: 40.7128</div>
+        <div className="flex items-center gap-2"><Activity size={12} /> SYNC_STATUS: ACTIVE</div>
+        <div className="flex items-center gap-2"><ShieldCheck size={12} /> ENCRYPTION: AES-256</div>
       </div>
 
-      <div className="absolute bottom-32 right-6 md:right-10 hidden sm:block font-mono text-[8px] md:text-[10px] text-[#FF0000]/60 text-right">
-        <div className="border-r-2 border-b-2 border-[#FF0000] p-4">
+      <div className="absolute bottom-32 right-6 md:right-10 hidden sm:block font-mono text-[8px] md:text-[10px] text-primary/60 text-right">
+        <div className="border-r-2 border-b-2 border-primary p-4">
           <p>NEURAL_LINK_ESTABLISHED</p>
           <p>BUFFERING_DRIVE...</p>
         </div>
@@ -32,15 +32,15 @@ const Hero: React.FC = () => {
           <span className="w-1.5 h-1.5 bg-[#FF0000] rounded-full animate-ping" />
           SYSTEM ONLINE // v4.0.2
         </div>
-        
+
         <h1 className="text-4xl sm:text-6xl md:text-9xl font-orbitron font-black leading-tight md:leading-none mb-8 tracking-tighter uppercase glitch-text break-words">
           FUTURE <br />
           <span className="neon-text">VISUALS</span>
         </h1>
-        
+
         <p className="max-w-xl mx-auto text-gray-400 text-sm md:text-lg font-light mb-12 leading-relaxed font-mono px-4">
-          [LOG] Architecting high-fidelity digital dimensions. 
-          <br className="hidden md:block"/>
+          [LOG] Architecting high-fidelity digital dimensions.
+          <br className="hidden md:block" />
           Merging raw aesthetics with systematic precision.
         </p>
 
