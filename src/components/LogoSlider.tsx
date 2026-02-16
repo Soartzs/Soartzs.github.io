@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 
 const clients = [
-  "DIONYSOS", "WLW", "ENTRACT", "1337", "FUTURAVISIO", "COCA-COLA",
-  "DIONYSOS", "WLW", "ENTRACT", "1337", "FUTURAVISIO", "COCA-COLA",
+  "CODE Websites", "WEBFLOW", "FRAMER", "WORDPRESS", "PHOTOSHOP", "ILLUSTRATOR", "FIGMA", "AFTER EFFECTS"
 ];
 
 const LogoSlider = () => {
@@ -10,7 +9,7 @@ const LogoSlider = () => {
     <section className="border-y border-border/50 bg-card/50 py-16 overflow-hidden">
       <div className="container px-6 mb-10">
         <p className="font-mono text-sm uppercase tracking-[0.3em] text-muted-foreground text-center">
-          Trusted by <span className="text-primary">industry leaders</span>
+          MY <span className="text-primary">TECH STACK</span>
         </p>
       </div>
 
@@ -21,16 +20,21 @@ const LogoSlider = () => {
 
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="flex w-max gap-32 items-center"
+          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          className="flex w-max items-center"
         >
-          {clients.map((name, i) => (
-            <span
-              key={`${name}-${i}`}
-              className="font-mono text-2xl font-bold tracking-[0.15em] text-muted-foreground/40 transition-colors hover:text-primary whitespace-nowrap select-none"
-            >
-              {name}
-            </span>
+          {/* Duplicate the set for a perfect infinite loop */}
+          {[1, 2].map((set) => (
+            <div key={set} className="flex gap-32 pr-32 items-center">
+              {clients.map((name, i) => (
+                <span
+                  key={`${name}-${i}`}
+                  className="font-mono text-2xl font-bold tracking-[0.15em] text-muted-foreground/40 transition-colors hover:text-primary whitespace-nowrap select-none"
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
           ))}
         </motion.div>
       </div>

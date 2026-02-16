@@ -111,17 +111,17 @@
       linear-gradient(to right, hsl(var(--primary) / 0.2) 1px, transparent 1px),
       linear-gradient(to bottom, hsl(var(--primary) / 0.2) 1px, transparent 1px);
     background-size: 60px 60px;
-    mask-image: linear-gradient(to bottom, transparent, black 40%, black 60%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
     animation: grid-move 2s linear infinite;
   }
 
   @keyframes grid-move {
     from {
-      transform: rotateX(60deg) translateY(0);
+      background-position-y: 0;
     }
 
     to {
-      transform: rotateX(60deg) translateY(60px);
+      background-position-y: 60px;
     }
   }
 
