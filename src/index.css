@@ -108,8 +108,8 @@
     margin-left: -100%;
     transform: rotateX(60deg);
     background-image:
-      linear-gradient(to right, hsl(var(--primary) / 0.2) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--primary) / 0.2) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
     animation: grid-move 2s linear infinite;
