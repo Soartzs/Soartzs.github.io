@@ -28,12 +28,10 @@ const CustomCursor = () => {
 
         const handleMouseOver = (e: MouseEvent) => {
             const target = e.target as HTMLElement;
+            if (!target) return;
+
             const isPointer = !!(
-                target.tagName === 'A' ||
-                target.tagName === 'BUTTON' ||
-                target.closest('button') ||
-                target.closest('a') ||
-                target.classList.contains('cursor-pointer') ||
+                target.closest('button, a, .cursor-pointer') ||
                 window.getComputedStyle(target).cursor === 'pointer'
             );
 

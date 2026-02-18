@@ -24,6 +24,8 @@ const AboutSection = () => {
               <img
                 src={selfPortrait}
                 alt="Johnny's Portrait"
+                loading="lazy"
+                decoding="async"
                 className="aspect-[3/4] w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
@@ -41,7 +43,7 @@ const AboutSection = () => {
             </h2>
             <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
               I’m a passionate graphic and web designer with over 8 years of experience creating strong visual identities and engaging digital experiences.
-              What started in my childhood bedroom has grown into a professional freelance career, which I’ve been running successfully for over two years. 
+              What started in my childhood bedroom has grown into a professional freelance career, which I’ve been running successfully for over two years.
               Today, I help brands, startups, and entrepreneurs turn ideas into impactful design.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-muted-foreground">

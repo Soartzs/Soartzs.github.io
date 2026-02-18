@@ -113,6 +113,7 @@
     background-size: 60px 60px;
     mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
     animation: grid-move 2s linear infinite;
+    will-change: transform;
   }
 
   @keyframes grid-move {
@@ -135,6 +136,7 @@
       -0.025em -0.05em 0 rgba(0, 255, 255, 0.75),
       0.025em 0.05em 0 rgba(255, 0, 255, 0.75);
     animation: glitch 500ms infinite;
+    will-change: text-shadow;
   }
 
   .glitch-text span {
