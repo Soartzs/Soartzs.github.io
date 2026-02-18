@@ -8,8 +8,6 @@ const Footer = () => {
           </p>
           <div className="flex gap-6">
             {[
-              { name: "Dribbble", url: "#" },
-              { name: "Behance", url: "#" },
               { name: "Instagram", url: "https://www.instagram.com/johnny.zrm/" },
               { name: "LinkedIn", url: "https://www.linkedin.com/in/jonathan-zimmermann/" },
             ].map((link) => (
