@@ -1,18 +1,16 @@
 import { motion } from "framer-motion";
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
+import work1 from "@/assets/Entract_Website.webp";
+import work2 from "@/assets/Logo_Showcase.webp";
+import work3 from "@/assets/Flyer1.webp";
 import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.jpg";
-import work6 from "@/assets/work-6.jpg";
 
 const projects = [
-  { image: work1, title: "Brand Identity System", category: "Branding", span: "lg:col-span-2 lg:row-span-2" },
-  { image: work2, title: "SaaS Dashboard", category: "Web Design", span: "" },
-  { image: work3, title: "Poster Series", category: "Print", span: "" },
+  { image: work1, title: "Entract Webflow Website", category: "Web Design", span: "lg:col-span-2 lg:row-span-2" },
+  { image: work2, title: "Logo & Banner", category: "Graphic Design", span: "" },
+  { image: work3, title: "Flyer", category: "Print", span: "" },
   { image: work4, title: "Mobile App UI", category: "UI/UX", span: "" },
   { image: work5, title: "Product Packaging", category: "Print", span: "" },
-  { image: work6, title: "Social Campaign", category: "Digital", span: "lg:col-span-2" },
 ];
 
 const WorkSection = () => {
