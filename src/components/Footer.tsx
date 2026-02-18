@@ -10,6 +10,7 @@ const Footer = () => {
             {[
               { name: "Instagram", url: "https://www.instagram.com/johnny.zrm/" },
               { name: "LinkedIn", url: "https://www.linkedin.com/in/jonathan-zimmermann/" },
+              { name: "Imprint", url: "#/impressum" },
             ].map((link) => (
               <a
                 key={link.name}
@@ -20,14 +21,6 @@ const Footer = () => {
               </a>
             ))}
           </div>
-        </div>
-        <div className="border-t border-border/50 pt-6 flex justify-center">
-          <a
-            href="/#/impressum"
-            className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-primary"
-          >
-            Impressum
-          </a>
         </div>
       </div>
     </footer>
