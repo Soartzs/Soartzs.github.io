@@ -22,7 +22,7 @@ const ContactSection = () => {
           </p>
 
           <a
-            href="mailto:contact@createdbyjohnny.com"
+            href="mailto:createdbyjohnny@gmail.com"
             className="group inline-flex items-center gap-3 rounded-none border border-primary bg-primary px-10 py-4 font-mono text-sm uppercase tracking-widest text-primary-foreground transition-all hover:neon-glow-strong"
           >
             <Mail size={18} />
@@ -33,7 +33,7 @@ const ContactSection = () => {
           <div className="mt-16 flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-12">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail size={16} className="text-primary" />
-              <span className="text-sm">zimmermannjonathan@icloud.com</span>
+              <span className="text-sm">createdbyjohnny@gmail.com</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={16} className="text-primary" />
