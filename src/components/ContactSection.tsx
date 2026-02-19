@@ -33,7 +33,7 @@ const ContactSection = () => {
           <div className="mt-16 flex flex-col items-center gap-6 sm:flex-row sm:justify-center sm:gap-12">
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail size={16} className="text-primary" />
-              <span className="text-sm">contact@createdbyjohnny.com</span>
+              <span className="text-sm">zimmermannjonathan@icloud.com</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={16} className="text-primary" />
