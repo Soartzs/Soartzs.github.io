@@ -2,15 +2,15 @@ import { motion } from "framer-motion";
 import work1 from "@/assets/Entract_Website.webp";
 import work2 from "@/assets/Logo_Showcase.webp";
 import work3 from "@/assets/Flyer1.webp";
-import work4 from "@/assets/work-4.jpg";
-import work5 from "@/assets/work-5.jpg";
+import work4 from "@/assets/App_Preview.webp";
+import work5 from "@/assets/Converter_Preview.webp";
 
 const projects = [
   { image: work1, title: "Entract Webflow Website", category: "Web Design", span: "lg:col-span-2 lg:row-span-2" },
   { image: work2, title: "Logo & Banner", category: "Graphic Design", span: "" },
   { image: work3, title: "Flyer", category: "Print", span: "" },
   { image: work4, title: "Mobile App UI", category: "UI/UX", span: "" },
-  { image: work5, title: "Product Packaging", category: "Print", span: "" },
+  { image: work5, title: "Webp Converter", category: "HTML/CSS", span: "" },
 ];
 
 const WorkSection = () => {
