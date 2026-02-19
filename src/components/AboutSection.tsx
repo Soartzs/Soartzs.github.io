@@ -42,12 +42,12 @@ const AboutSection = () => {
               <span className="text-primary neon-text">it's how it works.</span>
             </h2>
             <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-              I’m a passionate graphic and web designer with over 8 years of experience creating strong visual identities and engaging digital experiences.
-              What started in my childhood bedroom has grown into a professional freelance career, which I’ve been running successfully for over two years.
-              Today, I help brands, startups, and entrepreneurs turn ideas into impactful design.
+              I’m a graphic and web designer with over 8 years of experience creating digital experiences that are clear, modern, and effective.
+              Alongside my studies, I’ve been working professionally on diverse creative projects for startups, brands, and entrepreneurs for over two years.
             </p>
             <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-              I combine creativity with strategy and technical precision — delivering modern, functional, and visually compelling solutions that drive results.
+              By combining creativity, strategy, and technical expertise, I deliver scalable design solutions that improve user experience,
+              strengthen brand identity, and drive real business results.
             </p>
 
             {/* Stats */}
